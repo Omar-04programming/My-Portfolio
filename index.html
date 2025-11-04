@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Ali - Java & Frontend Developer | Software Tester</title>
+    <meta name="description" content="Omar Ali Abdallatif Khalifa - Passionate Java & Frontend Developer with expertise in software testing. Building interactive, user-friendly applications with clean, efficient code.">
+    <meta name="author" content="Omar Ali">
+    <meta name="keywords" content="Java Developer, Frontend Developer, Software Tester, JavaFX, React, HTML, CSS, JavaScript, JUnit, Selenium, Git, SQL">
+    
+    <meta property="og:title" content="Omar Ali - Java & Frontend Developer Portfolio">
+    <meta property="og:description" content="Passionate developer specializing in Java, Frontend development, and software testing. View my projects and get in touch!">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="shortcut icon" href="./icons/hand-peace-regular-full.svg" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- JS animation -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("YOUR_PUBLIC_KEY"); 
+    })();
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="navigation">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <span class="gradient-text">Omar</span>
+                    <span class="accent">.</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Contact Button -->
+                <div class="desktop-nav">
+                    <button class="contact-btn" onclick="scrollToSection('#contact')">Contact Me</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+                    <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+                    <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">Skills</a>
+                    <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">Projects</a>
+                    <a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()">Experience</a>
+                    <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+                    <button class="mobile-contact-btn" onclick="scrollToSection('#contact')">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Animated Background -->
+        <div class="hero-bg"></div>
+        <div class="floating-elements">
+            <div class="floating-element floating element-1"></div>
+            <div class="floating-element floating-delayed element-2"></div>
+            <div class="floating-element floating element-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Content -->
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="availability-badge">
+                            <i data-lucide="sparkles"></i>
+                            <span>Available for work</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="floating">Hi! I Am</span>
+                            <br>
+                            <span class="gradient-text text-shadow floating-delayed">Omar Ali</span>
+                        </h1>
+                        
+                        <div class="hero-subtitle">
+                            <div class="subtitle-line">
+                                <i data-lucide="code"></i>
+                                <span class="work-text"></span>
+                            </div>
+                        </div>
+                        
+                        <p class="hero-description">
+                            Design with flair, Java with care, testing to deliver software beyond compare.
+                        </p>
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="hero-buttons">
+                        <button class="hero-btn primary" onclick="scrollToSection('#projects')">
+                            <span>View My Work</span>
+                            <i data-lucide="arrow-down"></i>
+                        </button>
+                        
+                        <button class="hero-btn secondary" onclick="scrollToSection('#contact')">
+                            Contact Me
+                        </button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number gradient-text">20+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number gradient-text">2+</div>
+                            <div class="stat-label">Years Learning</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number gradient-text">100%</div>
+                            <div class="stat-label">Dedication</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-glow"></div>
+                        <div class="profile-image">
+                            <img src="https://i.postimg.cc/yxGTd9XP/2088.jpg" alt="Omar Ali Profile Picture">
+                        </div>
+                        
+                        <!-- Floating Badges -->
+                        <div class="badge badge-1 floating">
+                            <div class="badge-emoji">💻</div>
+                            <div class="badge-text">Full Stack</div>
+                        </div>
+                        
+                        <div class="badge badge-2 floating-delayed">
+                            <div class="badge-emoji">🧪</div>
+                            <div class="badge-text">Testing Expert</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-wheel">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="section-title">
+                    About <span class="gradient-text">Me</span>
+                </h2>
+                <p class="section-description">
+                    Get to know more about my journey, passion, and what drives me as a developer
+                </p>
+            </div>
+
+            <div class="content-grid">
+                <!-- Profile Description -->
+                <div class="profile-section">
+                    <div class="glass-card story-card">
+                        <h3 class="story-title">My Story</h3>
+                        <div class="story-content">
+                            <p>"From the very first Hello World I wrote, I knew coding was more than just lines of text—it was the start of a journey fueled by passion". 🔥
+                            I'm Omar Ali, a Computer Science student with a strong foundation in Java, C++, and JavaScript. Along the way, I dove deep into Data Structures and OOP, which helped me build over 15 diverse projects.</p>
+                            
+                            <p>But I didn't stop at academics: I challenged myself with Problem Solving using Java, C++, and JavaScript. I explored the world of Front-End Development, creating over 8 projects with HTML5 and CSS3. My ultimate goal? To grow into a Full-Stack Developer capable of connecting every piece together.</p>
+                            
+                            <p>Currently, I'm also part of DEPI, learning Software Testing and applying my skills to real-world testing projects—because great code isn't just written, it's tested and trusted. ✅
+
+                            My story is still being written, but the next chapter could be with you.
+                            If you're looking for someone passionate, versatile, and driven to bring real value to your project—let's build something amazing together 🚀."</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card values-card">
+                        <h4 class="values-title">Core Values</h4>
+                        <div class="values-grid">
+                            <div class="value-item quality">
+                                <div class="value-icon">🎯</div>
+                                <div class="value-text">Quality First</div>
+                            </div>
+                            <div class="value-item innovation">
+                                <div class="value-icon">🚀</div>
+                                <div class="value-text">Innovation</div>
+                            </div>
+                            <div class="value-item collaboration">
+                                <div class="value-icon">🤝</div>
+                                <div class="value-text">Collaboration</div>
+                            </div>
+                            <div class="value-item learning">
+                                <div class="value-icon">📚</div>
+                                <div class="value-text">Learning</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobbies & Interests -->
+                <div class="hobbies-section">
+                    <h3 class="hobbies-title">
+                        Hobbies & <span class="gradient-text">Interests</span>
+                    </h3>
+                    
+                    <div class="hobbies-grid">
+                        <div class="hobby-card" data-delay="0">
+                            <div class="hobby-content">
+                                <div class="hobby-icon-wrapper">
+                                    <svg class="hobby-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                                        <line x1="6" y1="1" x2="6" y2="4"/>
+                                        <line x1="10" y1="1" x2="10" y2="4"/>
+                                        <line x1="14" y1="1" x2="14" y2="4"/>
+                                    </svg>
+                                </div>
+                                <div class="hobby-text">
+                                    <h4 class="hobby-name">Coffee Lover</h4>
+                                    <p class="hobby-description">Fuel for coding sessions</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hobby-card" data-delay="0.1">
+                            <div class="hobby-content">
+                                <div class="hobby-icon-wrapper">
+                                    <svg class="hobby-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="2"/>
+                                        <path d="M20.09 12c-.46-.52-1.19-1.19-2.12-1.85a3 3 0 0 0-1.34-.34 3 3 0 0 0 1.34-.34c.93-.66 1.66-1.33 2.12-1.85m-16.18 0c.46.52 1.19 1.19 2.12 1.85A3 3 0 0 0 8.35 10a3 3 0 0 0-1.34.34c-.93.66-1.66 1.33-2.12 1.85"/>
+                                        <path d="M12 2v20"/>
+                                    </svg>
+                                </div>
+                                <div class="hobby-text">
+                                    <h4 class="hobby-name">Music</h4>
+                                    <p class="hobby-description">Lo-fi while coding</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hobby-card" data-delay="0.2">
+                            <div class="hobby-content">
+                                <div class="hobby-icon-wrapper">
+                                    <svg class="hobby-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="hobby-text">
+                                    <h4 class="hobby-name">Learning</h4>
+                                    <p class="hobby-description">Always exploring new tech</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hobby-card" data-delay="0.3">
+                            <div class="hobby-content">
+                                <div class="hobby-icon-wrapper">
+                                    <svg class="hobby-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                </div>
+                                <div class="hobby-text">
+                                    <h4 class="hobby-name">Gaming</h4>
+                                    <p class="hobby-description">Strategy & puzzle games</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hobby-card" data-delay="0.4">
+                            <div class="hobby-content">
+                                <div class="hobby-icon-wrapper">
+                                    <svg class="hobby-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                        <circle cx="12" cy="13" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="hobby-text">
+                                    <h4 class="hobby-name">Photography</h4>
+                                    <p class="hobby-description">Capturing moments</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hobby-card" data-delay="0.5">
+                            <div class="hobby-content">
+                                <div class="hobby-icon-wrapper">
+                                    <svg class="hobby-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </div>
+                                <div class="hobby-text">
+                                    <h4 class="hobby-name">Problem Solving</h4>
+                                    <p class="hobby-description">Love tackling challenges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fun Facts -->
+                    <div class="glass-card fun-facts-card">
+                        <h4 class="fun-facts-title">Fun Facts</h4>
+                        <div class="fun-facts-list">
+                            <div class="fun-fact">
+                                <span class="fact-icon">☕</span>
+                                <span class="fact-text">I've consumed over 1000 cups of coffee while coding</span>
+                            </div>
+                            <div class="fun-fact">
+                                <span class="fact-icon">🌙</span>
+                                <span class="fact-text">Most productive coding hours: 10 PM - 2 AM</span>
+                            </div>
+                            <div class="fun-fact">
+                                <span class="fact-icon">🎮</span>
+                                <span class="fact-text">Built my first game at age 16</span>
+                            </div>
+                            <div class="fun-fact">
+                                <span class="fact-icon">🐛</span>
+                                <span class="fact-text">Debugging is like detective work - I love it!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    My <span class="gradient-text">Skills</span>
+                </h2>
+                <p class="section-description">
+                    Technologies and tools I work with to bring ideas to life
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Backend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon primary">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3>Programming laguages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-brands fa-java" style="color: #FFD43B;"></i></span>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <span class="skill-level">90%</span>
+                            <div class="progress-bar">
+                                <div class="progress primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">🖥️</span>
+                                <span class="skill-name">JavaFX</span>
+                            </div>
+                            <span class="skill-level">85%</span>
+                            <div class="progress-bar">
+                                <div class="progress primary" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">⚙️</span>
+                                <span class="skill-name">C++</span>
+                            </div>
+                            <span class="skill-level">50%</span>
+                            <div class="progress-bar">
+                                <div class="progress primary" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-brands fa-python" style="color: #FFD43B;"></i></span>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <span class="skill-level">50%</span>
+                            <div class="progress-bar">
+                                <div class="progress primary" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-average">
+                        <span>Average Proficiency</span>
+                        <span>68.75%</span>
+                    </div>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon accent">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-solid fa-code" style="color: #FFD43B;"></i></span>
+                                <span class="skill-name">HTML</span>
+                            </div>
+                            <span class="skill-level">95%</span>
+                            <div class="progress-bar">
+                                <div class="progress accent" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-brands fa-css3" style="color: #FFD43B;"></i></span>
+                                <span class="skill-name">CSS</span>
+                            </div>
+                            <span class="skill-level">85%</span>
+                            <div class="progress-bar">
+                                <div class="progress accent" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-brands fa-bootstrap" style="color: #FFD43B;"></i></span>
+                                <span class="skill-name">Bootstrap</span>
+                            </div>
+                            <span class="skill-level">80%</span>
+                            <div class="progress-bar">
+                                <div class="progress accent" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-brands fa-js" style="color: #B197FC;"></i></span>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <span class="skill-level">50%</span>
+                            <div class="progress-bar">
+                                <div class="progress accent" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-average">
+                        <span>Average Proficiency</span>
+                        <span>77.5%</span>
+                    </div>
+                </div>
+
+                <!-- Testing & QA -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon neon-cyan">
+                            <i data-lucide="test-tube"></i>
+                        </div>
+                        <h3>Testing & QA</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">🧪</span>
+                                <span class="skill-name">ISTQB Fundamentals</span>
+                            </div>
+                            <span class="skill-level">90%</span>
+                            <div class="progress-bar">
+                                <div class="progress neon-cyan" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">🤖</span>
+                                <span class="skill-name">Bug Report</span>
+                            </div>
+                            <span class="skill-level">95%</span>
+                            <div class="progress-bar">
+                                <div class="progress neon-cyan" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">🔍</span>
+                                <span class="skill-name">Manual Testing</span>
+                            </div>
+                            <span class="skill-level">90%</span>
+                            <div class="progress-bar">
+                                <div class="progress neon-cyan" style="width: 55%"></div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">⚙️</span>
+                                <span class="skill-name">Test Automation</span>
+                            </div>
+                            <span class="skill-level">50%</span>
+                            <div class="progress-bar">
+                                <div class="progress neon-cyan" style="width: 15%"></div>
+                            </div>
+                    </div>
+                    <div class="category-average">
+                        <span>Average Proficiency</span>
+                        <span>81.25%</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon secondary">
+                            <i data-lucide="git-branch"></i>
+                        </div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-brands fa-gitlab" style="color: #FFD43B;"></i></span>
+                                <span class="skill-name">Git & GitHub</span>
+                            </div>
+                            <span class="skill-level">85%</span>
+                            <div class="progress-bar">
+                                <div class="progress secondary" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji"><i class="fa-solid fa-database" style="color: #FFD43B;"></i></span>
+                                <span class="skill-name">SQL</span>
+                            </div>
+                            <span class="skill-level">80%</span>
+                            <div class="progress-bar">
+                                <div class="progress secondary" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">💡</span>
+                                <span class="skill-name">IntelliJ IDEA</span>
+                            </div>
+                            <span class="skill-level">90%</span>
+                            <div class="progress-bar">
+                                <div class="progress secondary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-emoji">💻</span>
+                                <span class="skill-name">VS Code</span>
+                            </div>
+                            <span class="skill-level">85%</span>
+                            <div class="progress-bar">
+                                <div class="progress secondary" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-average">
+                        <span>Average Proficiency</span>
+                        <span>85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Technologies -->
+            <div class="additional-skills">
+                <h3 class="additional-title">
+                    Additional <span class="gradient-text">Technologies</span>
+                </h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Maven</span>
+                    <span class="tech-tag">Gradle</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Postman</span>
+                    <span class="tech-tag">JIRA</span>
+                    <span class="tech-tag">Agile</span>
+                    <span class="tech-tag">Scrum</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">JSON</span>
+                </div>
+            </div>
+
+            <!-- Learning Journey Timeline -->
+            <div class="learning-journey">
+                <h3 class="journey-title">
+                    Learning <span class="gradient-text">Journey</span>
+                </h3>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-milestone">Started with Java Fundamentals</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-milestone"> JavaFX & Database Integration</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-milestone">learning Frontend & Testing</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">Present</div>
+                            <div class="timeline-milestone">Building Full-Stack Applications</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="section-description">
+                    A showcase of my recent work and the technologies I've mastered
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: BurgerHero -->
+                <div class="project-card primary">
+                    <div class="project-header">
+                        <div class="project-icon primary">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>BurgerHero</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        BurgerHero is a stylish burger website built with HTML and CSS. It features a responsive layout with a header, product cards, and footer. Each burger item includes an image, name, description, and add-to-cart/favorite buttons. The design uses modern fonts, icons, and hover effects to enhance user experience.
+                    </p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Responsive layout design</li>
+                            <li>Product cards with images</li>
+                            <li>Add-to-cart and favorite buttons</li>
+                            <li>Modern fonts and hover effects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <button class="project-btn glass" onclick="window.open('https://github.com/Omar-04programming/Burger-Hero', '_blank')">
+                            <i data-lucide="github"></i> Code
+                        </button>
+                        <button class="project-btn secondary" onclick="window.open('https://omar-04programming.github.io/Burger-Hero/', '_blank')">
+                            <i data-lucide="external-link"></i> Demo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: DDA-MCP -->
+                <div class="project-card accent">
+                    <div class="project-header">
+                        <div class="project-icon accent">
+                            <i data-lucide="gamepad-2"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>DDA-Algorithm-And-MPC-Algorithm</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        This project demonstrates the implementation of two fundamental computer graphics algorithms using JavaFX:
+                        DDA (Digital Differential Analyzer) Line Drawing Algorithm – used to draw lines by incrementally calculating intermediate points between start and end coordinates.
+                        Midpoint Circle Drawing Algorithm – used to efficiently draw circles by exploiting symmetry and integer calculations.
+                    
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Interactive visualization of line and circle drawing.</li>
+                            <li>Step-by-step rendering of pixels for better understanding of the algorithms.</li>
+                            <li>Built with JavaFX for a graphical user interface.</li>
+                            <li>Educational tool for learning the basics of computer graphics.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>CSS</span>
+                            <span>SQL</span>
+                            <span>OOP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <button class="project-btn glass" onclick="window.open('https://github.com/Omar-04programming/DDA-Algorithm-and-Mid-point-circle-Algorithm-', '_blank')">
+                            <i data-lucide="github"></i> Code
+                        </button>
+                        <button class="project-btn secondary" onclick="window.open('https://drive.google.com/file/d/1nlPOtOCucisNRVAz8brswoq2nOOKWtf9/view?usp=drive_link', '_blank')">
+                            <i data-lucide="external-link"></i> Demo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3: Bug Report -->
+                <div class="project-card neon-cyan">
+                    <div class="project-header">
+                        <div class="project-icon neon-cyan">
+                            <i data-lucide="calculator"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Bug Report for Payment Gateway Application</h3>
+                            <span class="project-status in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        Manual testing project for Guru99 Payment Gateway Application. Includes requirements analysis, user stories,
+                        detailed test cases, bug reports, and traceability matrix. Validated credit card generation, balance check, and
+                        purchase flow, identifying critical defects in payment validation.
+                    </p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Requirements analysis and user story creation.</li>
+                            <li>Detailed test case design and execution.</li>
+                            <li>Bug reporting with severity/priority classification.</li>
+                            <li>Traceability matrix mapping requirements to test cases.</li>
+                            <li>Modular design for easy extension with additional operators.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span>Manual Testing</span>
+                            <span>Test Case Design</span>
+                            <span>Bug Reporting</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <button class="project-btn glass" onclick="window.open('https://github.com/Omar-04programming/Bug-Report-for-Payment-Gateway-Application')">
+                            <i data-lucide="github"></i> Github Link
+                        </button>
+                        <button class="project-btn secondary" onclick="window.open('https://1drv.ms/x/c/f096b8a72b43649a/ETATwwUfDgVJjGwWFeTCB-sBrOFqHTo3xjAi3l9KSHREuQ?e=YrRAXg')">
+                            <i data-lucide="external-link"></i> View
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4: Creative Agency Website -->
+                <div class="project-card secondary">
+                    <div class="project-header">
+                        <div class="project-icon secondary">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Creative Agency Website</h3>
+                            <span class="project-status in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        Multi-page website (Home, Services, About, Portfolio) built with HTML5, CSS3, Bootstrap 5, and Font Awesome. Features responsive design, CSS Grid layouts, and custom favicons for each page, showcasing a creative agency's services and portfolio with a modern, elegant style.
+                    </p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Multi-page responsive design</li>
+                            <li>CSS Grid layouts</li>
+                            <li>Custom favicons for each page</li>
+                            <li>Modern, elegant styling</li>
+                            <li>Developed a responsive web page design optimized for mobile, tablet, and desktop.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap 5</span>
+                            <span>Font Awesome</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <button class="project-btn glass" onclick="window.open('https://github.com/Omar-04programming/Creative-Agency', '_blank')">
+                            <i data-lucide="github"></i> Code
+                        </button>
+                        <button class="project-btn secondary" onclick="window.open('https://omar-04programming.github.io/Creative-Agency/', '_blank')">
+                            <i data-lucide="external-link"></i> Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Projects CTA -->
+            <div class="more-projects">
+                <div class="cta-card">
+                    <h3>Want to see <span class="gradient-text">more projects</span>?</h3>
+                    <p>Check out my GitHub for a complete list of projects, contributions, and code samples.</p>
+                    <button class="hero-btn primary" onclick="window.open('https://github.com/Omar-04programming', '_blank')">
+                        <i data-lucide="github"></i>
+                        View GitHub Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Experience & <span class="gradient-text">Education</span>
+                </h2>
+                <p class="section-description">
+                    My journey through learning, working, and growing as a developer
+                </p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Experience 1: Software Testing Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-dot primary">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="timeline-content left">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-type">
+                                    <span class="type-emoji">💼</span>
+                                    <span class="type-label primary">Experience</span>
+                                </div>
+                                <h3>Software Testing Intern</h3>
+                                <div class="company">DEPI</div>
+                                <div class="experience-meta">
+                                    <span>Remote</span>
+                                    <span class="period">
+                                        <i data-lucide="calendar"></i>
+                                        2025 - present
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <p class="experience-description">
+                                Digital Egypt Pioneers Initiative (DEPI) – Software Testing Track
+A specialized training program by the Ministry of Communications and Information Technology (MCIT) designed to equip participants with practical skills in software testing and quality assurance. The program covers manual and automated testing techniques, test planning and execution, defect management, and industry-standard tools, with a strong focus on applying software engineering principles to ensure software quality and reliability.
+                            </p>
+                            
+                            <div class="achievements">
+                                <h4>Key Learning Outcomes</h4>
+                                <ul>
+                                    <li>Fundamentals of Software Testing and Quality Assurance.</li>
+                                    <li>Manual Testing: test case design, execution, and defect reporting.</li>
+                                    <li>Automated Testing using industry-standard tools.</li>
+                                    <li>Test planning, strategies, and documentation.</li>
+                                    <li>Software Development Life Cycle (SDLC) and Agile methodologies.</li>
+                                    <li>Hands-on projects applying testing principles to real-world applications.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="technologies">
+                                <h4>Technologies Used</h4>
+                                <div class="tech-tags">
+                                    <span>Selenium</span>
+                                    <span>JUnit</span>
+                                    <span>JIRA</span>
+                                    <span>Agile</span>
+                                    <span>Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Computer Science Student -->
+                <div class="timeline-item">
+                    <div class="timeline-dot accent">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content right">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-type">
+                                    <span class="type-emoji">🎓</span>
+                                    <span class="type-label accent">Education</span>
+                                </div>
+                                <h3>Computer Science Student</h3>
+                                <div class="company">Alexandria University-Faculty of Science</div>
+                                <div class="experience-meta">
+                                    <span>Local</span>
+                                    <span class="period">
+                                        <i data-lucide="calendar"></i>
+                                        2023 - Present
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <p class="experience-description">
+                                Specialized in Computer Science with a strong foundation in mathematics and scientific principles. Focused on software development, programming concepts, algorithms, data structures, databases, and software engineering methodologies, with an emphasis on practical applications.
+                            </p>
+                            
+                            <div class="achievements">
+                                <h4>Key Achievements</h4>
+                                <ul>
+                                    <li>Maintained 3.3+ GPA in core CS subjects</li>
+                                    <li>Led team projects in software development</li>
+                                    <li>Active member of Web Tasks Club</li>
+                                    <li>Participated in multiple hackathons</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="technologies">
+                                <h4>Technologies Used</h4>
+                                <div class="tech-tags">
+                                    <span>Java</span>
+                                    <span>Data Structures</span>
+                                    <span>Algorithms</span>
+                                    <span>Software Engineering</span>
+                                    <span>Database Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: Freelance Developer -->
+                <div class="timeline-item">
+                    <div class="timeline-dot neon-cyan">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <div class="timeline-content left">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-type">
+                                    <span class="type-emoji">🚀</span>
+                                    <span class="type-label neon-cyan">Projects</span>
+                                </div>
+                                <h3>Freelance Developer</h3>
+                                <div class="company">Self-Employed</div>
+                                <div class="experience-meta">
+                                    <span>Remote</span>
+                                    <span class="period">
+                                        <i data-lucide="calendar"></i>
+                                        2025 - Present
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <p class="experience-description">
+                                Developing custom software solutions for small businesses and personal projects. Focus on Java desktop applications and web development.
+                            </p>
+                            
+                            <div class="achievements">
+                                <h4>Key Achievements</h4>
+                                <ul>
+                                    <li>في انتظار الفرج ان شاء الله</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="technologies">
+                                <h4>Technologies Used</h4>
+                                <div class="tech-tags">
+                                    <span>JavaFX</span>
+                                    <span>Java</span>
+                                    <span>MySQL</span>
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Development -->
+            <div class="professional-development">
+                <h3 class="dev-title">
+                    Professional <span class="gradient-text">Development</span>
+                </h3>
+                
+                <div class="dev-skills">
+                    <div class="dev-skill">
+                        <h4>Technical Skills</h4>
+                        <p>Continuously learning new technologies and frameworks</p>
+                        <div class="progress-number gradient-text">85%</div>
+                    </div>
+                    <div class="dev-skill">
+                        <h4>Problem Solving</h4>
+                        <p>Analytical thinking and debugging expertise</p>
+                        <div class="progress-number gradient-text">90%</div>
+                    </div>
+                    <div class="dev-skill">
+                        <h4>Team Collaboration</h4>
+                        <p>Agile methodologies and version control</p>
+                        <div class="progress-number gradient-text">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get In <span class="gradient-text">Touch</span>
+                </h2>
+                <p class="section-description">
+                    Ready to start a project or just want to chat? I'd love to hear from you!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <h3>
+                            <i data-lucide="message-circle"></i>
+                            Send a Message
+                        </h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Omar Ali" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Omar@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or just say hello!" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="hero-btn primary full-width">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <div class="info-header">
+                        <h3>
+                            <i data-lucide="map-pin"></i>
+                            Contact Information
+                        </h3>
+                        <p>Prefer direct contact? Here are the best ways to reach me.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <a href="mailto:omar04net@gmail.com" class="contact-item primary">
+                            <div class="contact-icon primary">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">omarali78940@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Omar-04programming" target="_blank" class="contact-item accent">
+                            <div class="contact-icon accent">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">@Omar-04programming</div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/omar-ali-abdallaltif" target="_blank" class="contact-item neon-cyan">
+                            <div class="contact-icon neon-cyan">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">Omar Ali Abdallaltif</div>
+                            </div>
+                        </a>
+
+                        <a href="tel:+201273947577" class="contact-item secondary">
+                            <div class="contact-icon secondary">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">01273947577</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Availability Status -->
+                    <div class="availability-status">
+                        <div class="status-indicator"></div>
+                        <div class="status-text">
+                            <div class="status-title">Available for Work</div>
+                            <div class="status-description">Currently open to new opportunities and projects</div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <div class="stat-number gradient-text">24h</div>
+                            <div class="stat-label">Avg Response Time</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number gradient-text">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h4>Let's Connect</h4>
+                        <div class="social-buttons">
+                            <a href="https://github.com/Omar-04programming" target="_blank" class="social-btn" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/omar-ali-abdallaltif" target="_blank" class="social-btn" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="mailto:omar04net@gmail.com" class="social-btn" aria-label="Email">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo/Name -->
+                <div class="footer-logo">
+                    <span class="gradient-text">Omar Ali</span>
+                    <span class="accent">.</span>
+                </div>
+
+                <!-- Made with love message -->
+                <div class="footer-message">
+                    <span>Made with</span>
+                    <i data-lucide="heart" class="heart-icon"></i>
+                    <span>using</span>
+                    <i data-lucide="code" class="code-icon"></i>
+                    <span>and lots of</span>
+                    <i data-lucide="coffee" class="coffee-icon"></i>
+                </div>
+
+                <!-- Copyright -->
+                <div class="footer-copyright">
+                    © <span id="current-year">2024</span> Omar Ali Abdallatif Khalifa. All rights reserved.
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="footer-tech">
+                    Built with React, TypeScript & Tailwind CSS
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./JS/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
